@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="modal" id="userLogin">
+            <h1>FSociety - Bank</h1>
+            <label for="">Login</label>
+            <input type="text" name="userName" id="userName">
+            <label for="">Password</label>
+            <input type="password" name="userPass" id="userPw">
+            <input type="button" value="Login" class="bgGreen" id="loginBtn">
+    </div>
+
+    <div class="modal hide" id="mainInfo">
+        <h1>Account Balance</h1>
+        <input type="text" id="userBalance" disabled>
+        <div>
+            <input type="button" value="Insert" id="insertBtn" class="bgGreen">
+            <input type="button" value="Remove" id="removeBtn" class="bgRed">
+        </div>
+    </div>
+
+    <div class="modal hide" id="insertModal">
+        <h1>Add to Account</h1>
+        <input type="number" id="insertValue" pattern="[0-9]*">
+        <input type="button" value="Confirm" id="insertValueBtn" class="bgGreen">
+    </div>
+
+    <div class="modal hide" id="removeModal">
+        <h1>Remove from Account</h1>
+        <input type="number" name="" id="removeValue" pattern="[0-9]*">
+        <input type="button" value="Confirm" id="removeValueBtn" class="bgRed">
+    </div>
+
+
+
+    <!-- Script -->
+    <script src="./script.js"></script>
+</body>
+</html>
