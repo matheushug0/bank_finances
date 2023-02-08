@@ -86,7 +86,7 @@ removeValueBtn.addEventListener("click", ()=>{
         removeValue.value = ""
     }else { */
 
-    balance[2] = Math.abs(parseFloat(removeValue.value));
+    balance[2] = parseFloat(removeValue.value);
 
     if((balance[0] - balance[2]) > balance[0] || isNaN(balance[2])){
         removeValue.value = "";
